@@ -57,6 +57,10 @@ btn_reinicio.addEventListener('click', () => {
     location.reload();
 });
 
+window.onload = () => {
+    document.getElementById('framework').scrollIntoView();
+};
+
 
 
 // Asignar evento al botón
