@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsivo -->
+
+
+    <!-- SEO Básico -->
+    <title>Jardín de Cartas</title>
+    <meta name="description" content="Bingoplop Santillana">
+    <meta name="keywords" content="Santillana, plantas, jardín">
+    <meta name="author" content="PastelitoSoft">
+
+    <!-- Redes Sociales / Compartir en Open Graph -->
+    <!--<meta property="og:title" content="Título del Proyecto">-->
+    <!--<meta property="og:description" content="Descripción para redes sociales, breve y atractiva.">-->
+    <!--<meta property="og:image" content="URL de la imagen que se usará en la previsualización.">-->
+    <!--<meta property="og:url" content="URL del proyecto">-->
+    <!--<meta property="og:type" content="website">-->
+
+    <!-- Twitter Cards -->
+    <!--<meta name="twitter:card" content="summary_large_image">-->
+    <!--<meta name="twitter:title" content="Título del Proyecto">-->
+    <!--<meta name="twitter:description" content="Descripción breve para Twitter">-->
+    <!--<meta name="twitter:image" content="URL de la imagen para Twitter">-->
+
+    <!-- Favicon -->
+    <!--<link rel="icon" href="ruta-al-favicon.ico" type="image/x-icon">-->
+    <!--<link rel="apple-touch-icon" href="ruta-al-icono-touch.png">-->
+    <!-- Icono para dispositivos Apple -->
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Manifiesto -->
+    <!--<link rel="manifest" href="/manifest.json">-->
+    <!-- Fuentes externas o Frameworks -->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">-->
+    <!-- Fuente de Google -->
+</head>
+
+<body>
+
+    <div class="container-fluid framework">
+
+        <img id="img-fondo" class="img-fondo" src="./res/img/fondo.jpg" alt="imagen fondo">
+
+        <div class="contenedor-principal ">
+            
+            <audio id="audio">
+                <source src="./res/sound/camera.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="parte-izquierda">
+
+                <div id="nombre-planta" class="nombre-planta ocultar"></div>
+
+                <img id="img-planta" class="img-planta" src="./res/img/img-inicio.png" alt="imagen">
+
+            </div>
+
+            <div class="parte-derecha">
+                <div class="parte-derecha-1">
+                    <button id="boton-reinicio" class="botones"><img id="img-btn-re" class="img-btn"
+                            src="./res/img/btn-reiniciar.png" alt="btn reinicio"></button>
+
+                </div>
+
+                <div id="nombre-planta2" class="parte-derecha-2">
+                    <button id="boton-mostrar" class="botones"><img id="img-btn-mo" class="img-btn"
+                            src="./res/img/btn-mostrar.png" alt="btn mostrar"></button>
+
+                </div>
+
+                <div class="parte-derecha-3">
+                    <button id="boton-siguiente" class="botones"><img id="img-btn-com" class="img-btn"
+                            src="./res/img/btn-comenzar.png" alt="btn comenzar"></button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
