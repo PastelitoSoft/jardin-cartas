@@ -80,11 +80,11 @@ export function nombrarPlanta(selectedNumber, output) {
     } else if (selectedNumber === 16) {
         output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">ROSAL</p>`;
     } else if (selectedNumber === 17) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">YUCA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">TOTORA</p>`;
     } else if (selectedNumber === 18) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">VINAGRILLO ROSADO</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">YUCA</p>`;
     } else if (selectedNumber === 19) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">DAMA DE NOCHE</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">VINAGRILLO ROSADO</p>`;
     }
 }
 
