@@ -20,7 +20,7 @@ function handleClick(btn_comenzar, numbers, imagen, output, sound, img_btn_com) 
         btn_mostrar.addEventListener('click', () => {
             nombrarPlanta(selectedNumber, output);
             showOutput(output, 'flip-fade-in', 1500);
-            hideOutput(output, 'flip-fade-out', 2500, 1500, () => enableButton(btn_comenzar));
+            hideOutput(output, 'flip-fade-out', 11500, 1500, () => enableButton(btn_comenzar));
         });
 
         img_btn_com.src = "./res/img/btn-siguiente.png"
@@ -45,7 +45,7 @@ function handleClick(btn_comenzar, numbers, imagen, output, sound, img_btn_com) 
         showOutput(output, 'flip-fade-in', 1500);
 
         // Ocultar el output con flip-fade-out después de 10 segundos y habilitar el botón
-        hideOutput(output, 'flip-fade-out', 2500, 1500, () => enableButton(btn_comenzar));
+        hideOutput(output, 'flip-fade-out', 11500, 1500, () => enableButton(btn_comenzar));
     } else {
         finalizar(imagen);
         btn_comenzar.disabled = true;
