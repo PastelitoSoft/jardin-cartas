@@ -160,6 +160,10 @@ body {
     display: none;
 }
 
+.cartel-aviso {
+    display: none;
+}
+
 
 
 
@@ -355,8 +359,9 @@ body {
     }
 
     .cartel-aviso {
+        display: flex;
         width: 90%;
-        height: 90%;
+
         border: solid rgb(252, 249, 249) 15px;
         border-radius: 15px;
         background-color: #E4F3F8;
@@ -379,14 +384,16 @@ body {
     }
 
     .cartel-aviso {
-        width: 90%;
-        height: 90%;
+        display: flex;
+        width: 70%;
         border: solid rgb(252, 249, 249) 15px;
         border-radius: 15px;
         background-color: #E4F3F8;
         position: absolute;
         z-index: 10;
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+        object-fit: cover;
+        object-position: center;
     }
 
     html,

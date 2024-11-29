@@ -7,45 +7,59 @@ export let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
 const imagen = document.getElementById('img-planta');
 const output = document.getElementById('nombre-planta');
 const sound = document.getElementById('audio');
+const btn_sound = document.getElementById('btn-sound');
 const btn_comenzar = document.getElementById('boton-siguiente');
 const btn_reinicio = document.getElementById('boton-reinicio');
 const btn_mostrar = document.getElementById('boton-mostrar');
 const img_btn_com = document.getElementById('img-btn-com');
 
 
-// Función principal que se ejecuta al hacer clic
+window.onload = () => {
+    document.body.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    setTimeout(() => {
+        document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300); // 
+};
+
 function handleClick(btn_comenzar, numbers, imagen, output, sound, img_btn_com) {
     if (numbers.length > 0) {
 
+        btn_sound.play()
+        img_btn_com.src = "./res/img/btn-siguiente.png"
+        disableButton(btn_comenzar);
+        disableButton(btn_mostrar);
+        disableButton(btn_reinicio);
+
+
+
+        const randomIndex = Math.floor(Math.random() * numbers.length);
+        const selectedNumber = numbers.splice(randomIndex, 1)[0];
+
+        restartAnimation(imagen, 'aplastarYExpandir');
+
+        imagen.src = `./res/img/${selectedNumber}.jpg`;
+
+        sound.play();
+
+        nombrarPlanta(selectedNumber, output);
+
+        showOutput(output, 'flip-fade-in', 1500);
+
+        hideOutput(output, 'flip-fade-out', 11500, 1500, () => {
+            enableButton(btn_comenzar)
+            enableButton(btn_mostrar)
+            enableButton(btn_reinicio)
+
+        });
+
+
         btn_mostrar.addEventListener('click', () => {
+            btn_sound.play();
             nombrarPlanta(selectedNumber, output);
             showOutput(output, 'flip-fade-in', 1500);
             hideOutput(output, 'flip-fade-out', 11500, 1500, () => enableButton(btn_comenzar));
         });
 
-        img_btn_com.src = "./res/img/btn-siguiente.png"
-        disableButton(btn_comenzar); // Deshabilitar el botón
-
-        const randomIndex = Math.floor(Math.random() * numbers.length);
-        const selectedNumber = numbers.splice(randomIndex, 1)[0];
-
-        // Reiniciar la animación de aplastar y expandir
-        restartAnimation(imagen, 'aplastarYExpandir');
-
-        // Cambiar la imagen
-        imagen.src = `./res/img/${selectedNumber}.jpg`;
-
-        // Reproducir el sonido
-        sound.play();
-
-        // Nombrar la planta
-        nombrarPlanta(selectedNumber, output);
-
-        // Mostrar el output con flip-fade-in después de 1.5 segundos
-        showOutput(output, 'flip-fade-in', 1500);
-
-        // Ocultar el output con flip-fade-out después de 10 segundos y habilitar el botón
-        hideOutput(output, 'flip-fade-out', 11500, 1500, () => enableButton(btn_comenzar));
     } else {
         finalizar(imagen);
         btn_comenzar.disabled = true;
@@ -54,16 +68,13 @@ function handleClick(btn_comenzar, numbers, imagen, output, sound, img_btn_com) 
 }
 
 btn_reinicio.addEventListener('click', () => {
-    location.reload();
+    btn_sound.play();
+    setTimeout(() => {
+        location.reload();
+    }, 800);
+
 });
 
-window.onload = () => {
-    document.getElementById('framework').scrollIntoView();
-};
-
-
-
-// Asignar evento al botón
 btn_comenzar.addEventListener('click', () => handleClick(btn_comenzar, numbers, imagen, output, sound, img_btn_com));
 
 

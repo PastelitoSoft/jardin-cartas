@@ -1,40 +1,34 @@
 
-// Función para deshabilitar el botón
 export function disableButton(button) {
     button.disabled = true;
 }
 
-// Función para habilitar el botón
 export function enableButton(button) {
     button.disabled = false;
 }
 
-// Función para reiniciar la animación de aplastar y expandir
 export function restartAnimation(element, animationClass) {
-    element.classList.remove(animationClass); // Eliminar la clase
-    void element.offsetWidth; // Forzar un reflow del DOM
-    element.classList.add(animationClass); // Volver a agregar la clase
+    element.classList.remove(animationClass);
+    void element.offsetWidth;
+    element.classList.add(animationClass);
 }
 
-// Función para mostrar el output con la animación
 export function showOutput(output, animationIn, delay) {
     setTimeout(() => {
-        output.classList.remove('flip-fade-out'); // Asegurarse de que no tenga la clase de fade-out
-        output.style.display = 'block'; // Asegurar que esté visible
-        output.classList.add(animationIn); // Agregar la clase de flip-fade-in
+        output.classList.remove('flip-fade-out');
+        output.style.display = 'block';
+        output.classList.add(animationIn);
     }, delay);
 }
 
-// Función para ocultar el output con la animación
 export function hideOutput(output, animationOut, delay, finalDelay, callback) {
     setTimeout(() => {
-        output.classList.remove('flip-fade-in'); // Eliminar la clase de fade-in
-        output.classList.add(animationOut); // Agregar la clase de fade-out
+        output.classList.remove('flip-fade-in');
+        output.classList.add(animationOut);
 
-        // Ocultar completamente después de la animación
         setTimeout(() => {
-            output.style.display = 'none'; // Ocultar después de que termine la animación
-            if (callback) callback(); // Ejecutar la función callback
+            output.style.display = 'none';
+            if (callback) callback();
         }, finalDelay);
     }, delay);
 }
@@ -88,7 +82,8 @@ export function nombrarPlanta(selectedNumber, output) {
     }
 }
 
-export function mostrarDeNuevo(selectedNumber, output, button) {
+export function mostrarDeNuevo(selectedNumber, output, button, sonido) {
+    sonido.play();
     nombrarPlanta(selectedNumber, output);
     showOutput(output, 'flip-fade-in', 1500);
     hideOutput(output, 'flip-fade-out', 2500, 1500, () => enableButton(button));
