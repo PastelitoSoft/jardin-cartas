@@ -275,7 +275,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 1000px) and (orientation: landscape) and (max-height: 1600px) {
+@media only screen and (max-width: 1000px) and (orientation: landscape) and (max-height: 1000px) {
     .img-planta {
         width: 60%;
         max-width: 650px;
@@ -363,6 +363,12 @@ body {
         position: absolute;
         z-index: 10;
         box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    html,
+    body {
+        overflow: auto;
+
     }
 
 }
