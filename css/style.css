@@ -165,6 +165,11 @@ body {
 }
 
 
+button:disabled {
+    cursor: not-allowed; 
+    opacity: 0.6; 
+}
+
 
 
 .aplastarYExpandir {
@@ -236,6 +241,64 @@ body {
 }
 
 
+/*------------------------------------------------------------*/
+
+@media only screen and (min-width: 1501px) {
+    .img-planta {
+        width: 90%;
+        max-width: 1200px;
+        border: solid 20px white;
+        border-radius: 10px;
+        margin: 0.5rem;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+        position: absolute;
+        z-index: 6;
+    }
+
+    .contenedor-imagen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       max-width: 1200px;
+        background-color: white;
+        border: white solid 30px;
+        border-radius: 10px;
+        padding: 0;
+        margin: 1rem;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    
+    }
+    .estilo-nombre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 5rem;
+        min-width: 650px;
+        min-height: 300px;
+        padding: 2rem;
+        font-weight: bold;
+        background-color: white;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+    }
+
+    .img-btn {
+        width: 45%;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+
+    }
+
+    .parte-derecha {
+        padding: 5px;
+    }
+
+    .botones {
+        padding: 2px;
+    }
+}
+
 
 @media only screen and (max-width: 1100px) {
     .img-planta {
@@ -253,9 +316,9 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0;
-        font-size: 1.2rem;
-        min-width: 350px;
-        min-height: 100px;
+        font-size: 2rem;
+        min-width: 450px;
+        min-height: 200px;
         padding: 1rem;
         font-weight: bold;
         background-color: white;
@@ -296,9 +359,9 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 2rem;
         min-width: 350px;
-        min-height: 100px;
+        min-height: 180px;
         padding: 1rem;
         font-weight: bold;
         background-color: white;

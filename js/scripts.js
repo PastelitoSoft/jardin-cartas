@@ -82,11 +82,6 @@ export function nombrarPlanta(selectedNumber, output) {
     }
 }
 
-export function mostrarDeNuevo(selectedNumber, output, button, sonido) {
-    sonido.play();
-    nombrarPlanta(selectedNumber, output);
-    showOutput(output, 'flip-fade-in', 1500);
-    hideOutput(output, 'flip-fade-out', 2500, 1500, () => enableButton(button));
-}
+
 
 
