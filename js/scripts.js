@@ -40,45 +40,45 @@ export function finalizar(imagen) {
 
 export function nombrarPlanta(selectedNumber, output) {
     if (selectedNumber === 0) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">HIGUERA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">higuera</p>`;
     } else if (selectedNumber === 1) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">ACHIRA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">achira</p>`;
     } else if (selectedNumber === 2) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">CABELLO DE ANGEL</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">cabello de ángel</p>`;
     } else if (selectedNumber === 3) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">CEIBO</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">ceibo</p>`;
     } else if (selectedNumber === 4) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">CERRAJA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">cerraja</p>`;
     } else if (selectedNumber === 5) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">COLA DE CABALLO</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">cola de caballo</p>`;
     } else if (selectedNumber === 6) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">DAMA DE NOCHE</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">dama de noche</p>`;
     } else if (selectedNumber === 7) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">GIRASOL</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">girasol</p>`;
     } else if (selectedNumber === 8) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">GUINDO</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">guindo</p>`;
     } else if (selectedNumber === 9) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">GUISANTES</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">guisante</p>`;
     } else if (selectedNumber === 10) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">LAGUNILLA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">lagunilla</p>`;
     } else if (selectedNumber === 11) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">LIMONERO</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">limonero</p>`;
     } else if (selectedNumber === 12) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">MALVA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">malva</p>`;
     } else if (selectedNumber === 13) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">MBURUCUYÁ</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">mburucuyá</p>`;
     } else if (selectedNumber === 14) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">POLILLERA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">polillera</p>`;
     } else if (selectedNumber === 15) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">REPOLLITO DE AGUA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">repollito de agua</p>`;
     } else if (selectedNumber === 16) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">ROSAL</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">rosal</p>`;
     } else if (selectedNumber === 17) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">TOTORA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">totora</p>`;
     } else if (selectedNumber === 18) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">YUCA</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">yuca</p>`;
     } else if (selectedNumber === 19) {
-        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">VINAGRILLO ROSADO</p>`;
+        output.innerHTML = `<p id="estilo-nombre" class="estilo-nombre">vinagrillo rosado</p>`;
     }
 }
 
